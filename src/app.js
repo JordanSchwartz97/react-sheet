@@ -16,19 +16,19 @@ class App extends Component {
                 superheroId: 1, 
                 name: 'Batman', 
                 primaryAbility: 'Wealthy',
-                secondarAbility: 'Rich'
+                secondaryAbility: 'Rich'
             },
             {
                 superheroId: 2, 
                 name: 'Superman',
                 primaryAbility: 'Super strength',
-                secondarAbility: 'Fly'
+                secondaryAbility: 'Fly'
             },
             {
                 superheroId: 3,
                 name: 'Spiderman',
                 primaryAbility: 'Spider senses',
-                secondarAbility: 'Shoots web'
+                secondaryAbility: 'Shoots web'
             }
         ]
     }
@@ -40,7 +40,6 @@ class App extends Component {
         <NamesList names={this.state.names}/>
         <SuperheroTable superheroes={this.state.superheroes}/>
         <button onClick={AlertUser}>Click Me!</button>
-        <h1>Welcome!</h1>
         </div>
     );
     }
